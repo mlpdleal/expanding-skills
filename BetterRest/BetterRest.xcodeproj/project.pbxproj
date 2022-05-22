@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAB54030283AAB3400BF8095 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EAB5402F283AAB3400BF8095 /* SleepCalculator.mlmodel */; };
 		EAF0B641283939B400741E05 /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF0B640283939B400741E05 /* BetterRestApp.swift */; };
 		EAF0B643283939B400741E05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF0B642283939B400741E05 /* ContentView.swift */; };
 		EAF0B645283939B700741E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF0B644283939B700741E05 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAB5402F283AAB3400BF8095 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = SOURCE_ROOT; };
 		EAF0B63D283939B400741E05 /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF0B640283939B400741E05 /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		EAF0B642283939B400741E05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				EAF0B640283939B400741E05 /* BetterRestApp.swift */,
+				EAB5402F283AAB3400BF8095 /* SleepCalculator.mlmodel */,
 				EAF0B642283939B400741E05 /* ContentView.swift */,
 				EAF0B644283939B700741E05 /* Assets.xcassets */,
 				EAF0B646283939B700741E05 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB54030283AAB3400BF8095 /* SleepCalculator.mlmodel in Sources */,
 				EAF0B643283939B400741E05 /* ContentView.swift in Sources */,
 				EAF0B641283939B400741E05 /* BetterRestApp.swift in Sources */,
 			);
