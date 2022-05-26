@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
+    @State private var score = 0
     
     var body: some View {
         NavigationView{
@@ -33,8 +34,19 @@ struct ContentView: View {
                         }
                     }
                 }
+        
+                Section{
+                    Text("Your score is: \(score)")
+                }
             }
             .navigationTitle(rootWord)
+            .toolbar{
+                Button("Restart"){
+                    clearList()
+                    resetScore()
+                    startGame()
+                }
+            }
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
             .alert(errorTitle, isPresented: $showingError){
@@ -42,6 +54,8 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            
+            
         }
     }
     
@@ -63,6 +77,17 @@ struct ContentView: View {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
+        
+        guard isShorter(word: answer) else {
+            wordError(title: "Word used is short", message: "Please, try a long word!")
+            return
+        }
+        guard isTheSame(word: answer) else {
+            wordError(title: "Word used is the same word displayed", message: "You can't use this word!")
+            return
+        }
+        
+        score += calculateScore(word: answer)
         
         withAnimation{
             usedWords.insert(answer, at: 0)
@@ -106,6 +131,26 @@ struct ContentView: View {
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         
         return misspelledRange.location == NSNotFound
+    }
+    
+    func isShorter(word: String) -> Bool {
+        word.count > 2
+    }
+    
+    func isTheSame(word: String) -> Bool {
+        !(word == rootWord)
+    }
+    
+    func calculateScore (word: String) -> Int {
+        10 + word.count
+    }
+    
+    func clearList(){
+        usedWords.removeAll()
+    }
+    
+    func resetScore(){
+        score = 0
     }
     
     func wordError(title: String, message: String){
