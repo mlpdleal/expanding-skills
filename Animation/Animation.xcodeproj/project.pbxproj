@@ -11,6 +11,8 @@
 		EAD809A12840F8D3004AFF17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD809A02840F8D3004AFF17 /* ContentView.swift */; };
 		EAD809A32840F8D6004AFF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD809A22840F8D6004AFF17 /* Assets.xcassets */; };
 		EAD809A62840F8D6004AFF17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD809A52840F8D6004AFF17 /* Preview Assets.xcassets */; };
+		EAFF43FA2842913C009D2FE5 /* ShowingAndHidingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF43F92842913C009D2FE5 /* ShowingAndHidingView.swift */; };
+		EAFF43FC2842959F009D2FE5 /* BuildingCustonTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF43FB2842959F009D2FE5 /* BuildingCustonTransitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EAD809A02840F8D3004AFF17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAD809A22840F8D6004AFF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD809A52840F8D6004AFF17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAFF43F92842913C009D2FE5 /* ShowingAndHidingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingAndHidingView.swift; sourceTree = "<group>"; };
+		EAFF43FB2842959F009D2FE5 /* BuildingCustonTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingCustonTransitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				EAD8099E2840F8D3004AFF17 /* AnimationApp.swift */,
 				EAD809A02840F8D3004AFF17 /* ContentView.swift */,
+				EAFF43F92842913C009D2FE5 /* ShowingAndHidingView.swift */,
+				EAFF43FB2842959F009D2FE5 /* BuildingCustonTransitions.swift */,
 				EAD809A22840F8D6004AFF17 /* Assets.xcassets */,
 				EAD809A42840F8D6004AFF17 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				EAD809A12840F8D3004AFF17 /* ContentView.swift in Sources */,
 				EAD8099F2840F8D3004AFF17 /* AnimationApp.swift in Sources */,
+				EAFF43FC2842959F009D2FE5 /* BuildingCustonTransitions.swift in Sources */,
+				EAFF43FA2842913C009D2FE5 /* ShowingAndHidingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
